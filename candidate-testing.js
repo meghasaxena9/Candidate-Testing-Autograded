@@ -45,11 +45,11 @@ function askQuestion() {
 function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-  /*for (let i = 0; i < 5; i++){
-    console.log ("Question: " + i+1);
-  if (correctAnswers[i] === candidateAnswers[i]) {
+  for (let i = 0; i < 5; i++){
+    console.log ("Question: " + Number(i+1));
+  if (correctAnswers[i] == candidateAnswers[i]) {
   console.log("Answer Correct");
-  correctAnswerCount++
+//  correctAnswerCount++
 }
   else {
     console.log ("Answer Incorrect");
@@ -58,7 +58,7 @@ function gradeQuiz(candidateAnswers) {
 
   }
   let grade;  //TODO 3.2 use this variable to calculate the candidates score.
-  candidatepercent = correctAnswerCount / 5 * 100
+  /*candidatepercent = correctAnswerCount / 5 * 100
   if (candidatepercent > 80){
     console.log (`Congratulations! You have passed the test with ${candidatepercent}% `);
   } else {
