@@ -15,7 +15,7 @@ candidateAnswer = "";
 //newarray = [8, 'Orbit', 'Trajectory', 45];
 //TODO: Variables for Part 2
 let questions = ["Who was the first American woman in space? ","True or false: 5 kilometer == 5000 meters? ","(5 + 3)/2 * 10 = ? ","Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2? ","What is the minimum crew size for the ISS? "];
-let correctAnswers = ["Sally Ride", "true", "40", "Trajectory", "3"];
+let correctAnswers = ["Sally Ride", "true", 40, "Trajectory", 3];
 let candidateAnswers;
 candidateAnswers = [];
 let correctAnswerCount;
@@ -49,7 +49,7 @@ function gradeQuiz(candidateAnswers) {
     console.log ("Question: " + Number(i+1));
   if (correctAnswers[i] == candidateAnswers[i]) {
   console.log("Answer Correct");
-//  correctAnswerCount++
+  correctAnswerCount++
 }
   else {
     console.log ("Answer Incorrect");
@@ -58,13 +58,13 @@ function gradeQuiz(candidateAnswers) {
 
   }
   let grade;  //TODO 3.2 use this variable to calculate the candidates score.
-  /*candidatepercent = correctAnswerCount / 5 * 100
-  if (candidatepercent > 80){
-    console.log (`Congratulations! You have passed the test with ${candidatepercent}% `);
+  grade = correctAnswerCount / 5 * 100
+  if (grade > 80){
+    console.log (`Congratulations! You have passed the test with ${grade}% `);
   } else {
-    console.log (`Sorry you have failed the test, your score is ${candidatepercent}% `);
+    console.log (`Sorry you have failed the test, your score is ${grade}% `);
   }
-  */
+  
 
 
   return grade;
